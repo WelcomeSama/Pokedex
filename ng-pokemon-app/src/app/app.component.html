@@ -1,0 +1,35 @@
+<h1 class="center">Pokedex</h1>
+
+<div class="container">
+  <h4 class="center">Kanto</h4>
+
+<!-- <input 
+    #input
+    (keyup.enter)="selectPokemon(input.value)"
+    type="number" 
+/>
+<p *ngIf="pokemonSelected">
+    Vous avez sélectionné le pokemon: {{ pokemonSelected?.name }}
+</p>
+
+<p *ngIf="!pokemonSelected">
+    Auncun pokemon n'a été trouvé.
+</p> -->
+
+  <div class="row">
+    <div *ngFor="let pokemon of pokemonList" class="col m4 s12">
+      <div class="card horizontal">
+        <div class="card-image">
+          <img [src]="pokemon.picture" alt="pokemon" />
+        </div>
+        <div class="card-stacked">
+          <div class="card-content">
+            <p>{{ pokemon.name }}</p>
+            <p><small>{{ pokemon.created }}</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
