@@ -10,11 +10,13 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { PokemonModule } from './pokemon/pokemon.module';
 import { PokemonService } from './pokemon/pokemon.service';
 import { InMemoryDataService } from './in-memory-data.service';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PageNotFoundComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
